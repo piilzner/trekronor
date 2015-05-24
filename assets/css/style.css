@@ -46,6 +46,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.stream-window {
+  max-width: 960px;
+  height: auto;
+  background: pink;
+  border: 5px solid rgba(255, 255, 255, 0.7); }
+
 body {
   background: #1f1f1f; }
 
