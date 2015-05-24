@@ -15,25 +15,17 @@ function changeActiveUser(){
 
 		document.getElementById('player-one').classList.remove('active');
 		document.getElementById('player-two').classList.add('active');
-
-	}else{
-
-		document.getElementById('player-two').classList.remove('active');
-		document.getElementById('player-one').classList.add('active');
-	}
-	
-	if(document.getElementById('home-score').classList.contains('score')){
-
 		document.getElementById('home-score').classList.remove('score');
 		document.getElementById('away-score').classList.add('score');
 
 	}else{
 
+		document.getElementById('player-two').classList.remove('active');
+		document.getElementById('player-one').classList.add('active');
 		document.getElementById('away-score').classList.remove('score');
 		document.getElementById('home-score').classList.add('score');
-
 	}
-
+	
 };
 
 
@@ -62,4 +54,5 @@ function goal(){
 	}
 
 };
+
 

@@ -4,11 +4,6 @@
 body
 	background: $bg
 
-#sound_intro
-	visibility: hidden
-#page_intro
-	visibility: hidden
-
 
 // background image (ice)
 .bg
@@ -20,6 +15,46 @@ body
 		image: url('http://humbervalleyhockeyschool.com/asst/hockey-ice-background2.jpg')
 		size: cover 
 	opacity: 0.1
+
+
+
+// Modal alert 
+.modal-alert
+	position: absolute
+	top: 0
+	left: 0
+	+size(100%)
+	background: rgba(0,0,0,0.7)
+	z-index: 200
+	+display(flex)
+	+justify-content(center)
+	+align-items(center)
+	display: none
+	+transition(all 800ms)
+
+	.modal-box
+		width: 450px
+		height: 100px
+		background: rgba(255,255,255,0.9)
+		text-align: center
+		padding: 15px
+		+transition(all 800ms)
+		transform: scale(0)
+		font:
+			family: $roboto
+			size: 18px 
+
+		.ok-button
+			+size(50px)
+			border-radius: 50%
+			border: 1px solid black
+			background: #309520
+			margin: 20px auto
+			+display(flex)
+			+justify-content(center)
+			+align-items(center)
+			cursor: pointer
+		
 
 // Content wrapper
 #wrapper
@@ -52,7 +87,7 @@ body
 	// Controler div (show gameplay controls)
 	.controls
 		position: absolute
-		top: -80px 
+		top: -50px 
 		left: 50%
 		width: 800px
 		margin-left: -400px
@@ -151,19 +186,19 @@ body
 			max-width: 100%
 			height: auto
 
-
-
+	// Player one
 	#player-one
 		border: 1px solid red
 
-		
+	// Player two
 	#player-two
 		border: 1px solid blue
 
 
 // Add active class on playercards
 .active
-	box-shadow: 5px 5px 5px rgba(255,255,255,0.7)
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.7)
+
 
 
 // Inputs for playernames
@@ -217,6 +252,28 @@ body
 
 	&:hover
 		transform: scale(1.3)
+
+
+// Start game button
+#players-turn
+	position: absolute
+	bottom: 0px
+	left: 50%
+	width: 300px
+	height: 100px
+	margin-left: -150px
+	+display(flex)
+	+justify-content(center)
+	line-height: 3.5
+	font: 
+		size: 24px
+		weight: bold
+		family: $roboto
+	text-transform: uppercase
+	color: white
+	+transition(all 400ms)
+	// display: none
+	cursor: pointer
 
 
 

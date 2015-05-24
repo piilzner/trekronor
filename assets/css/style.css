@@ -49,12 +49,6 @@ table {
 body {
   background: #1f1f1f; }
 
-#sound_intro {
-  visibility: hidden; }
-
-#page_intro {
-  visibility: hidden; }
-
 .bg {
   position: fixed;
   top: 0;
@@ -64,6 +58,89 @@ body {
   background-image: url("http://humbervalleyhockeyschool.com/asst/hockey-ice-background2.jpg");
   background-size: cover;
   opacity: 0.1; }
+
+.modal-alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 200;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: none;
+  -webkit-transition: all 800ms;
+  -moz-transition: all 800ms;
+  transition: all 800ms; }
+  .modal-alert .modal-box {
+    width: 450px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 15px;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    transition: all 800ms;
+    transform: scale(0);
+    font-family: "Roboto";
+    font-size: 18px; }
+    .modal-alert .modal-box .ok-button {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid black;
+      background: #309520;
+      margin: 20px auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      cursor: pointer; }
 
 #wrapper {
   position: absolute;
@@ -112,7 +189,7 @@ body {
       transform: scale(1.1); }
   #wrapper .controls {
     position: absolute;
-    top: -80px;
+    top: -50px;
     left: 50%;
     width: 800px;
     margin-left: -400px;
@@ -290,7 +367,7 @@ body {
     border: 1px solid blue; }
 
 .active {
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7); }
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7); }
 
 .playerName {
   position: absolute;
@@ -356,3 +433,37 @@ body {
     height: auto; }
   #start-game:hover {
     transform: scale(1.3); }
+
+#players-turn {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 300px;
+  height: 100px;
+  margin-left: -150px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  line-height: 3.5;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  transition: all 400ms;
+  cursor: pointer; }

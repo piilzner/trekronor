@@ -13,16 +13,17 @@
 	<script type="text/javascript" src="assets/js/mousetrap.js"></script>
 </head>
 <body>
-
-	<audio controls id="sound_intro">
-  		<source src="assets/lib/sounds/NHLintro.mp3" type="audio/mpeg">
-	</audio>
-	<audio controls id="page_intro">
-  		<source src="assets/lib/sounds/pageintro.mp3" type="audio/mpeg">
-	</audio>
 	
 	<!-- Background image ( ice ) -->
 	<div class="bg"></div>
+
+	<!-- Modal alert -->
+	<div class="modal-alert">
+		<div class="modal-box">
+			<p>You have to enter both playernames to start the game!</p>
+			<div class="ok-button">OK</div>
+		</div>
+	</div>
 
 	<!-- Content wrapper -->
 	<div id="wrapper">
@@ -30,7 +31,7 @@
 		<!-- Controler button -->
 		<div class="control-btn">
 			<i class="fa fa-gamepad fa-5x"></i>
-			control
+			controls
 		</div>
 	
 		<!-- Shooter controler div -->
@@ -73,7 +74,7 @@
 			
 			<p>start game</p>
 		</div>
-
+		
 	</div>
 
 
