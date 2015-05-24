@@ -173,7 +173,7 @@ body {
   -ms-flex-align: center; }
   #wrapper .control-btn {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 50px;
     width: 100px;
     height: 100px;
@@ -189,10 +189,10 @@ body {
       transform: scale(1.1); }
   #wrapper .controls {
     position: absolute;
-    top: -50px;
+    top: -20px;
     left: 50%;
-    width: 800px;
-    margin-left: -400px;
+    width: 500px;
+    margin-left: -250px;
     display: none;
     -webkit-transition: all 1000ms;
     -moz-transition: all 1000ms;
@@ -201,8 +201,8 @@ body {
       max-width: 100%;
       height: auto; }
   #wrapper .select-players {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     border-radius: 15px;
     background: #1f1f1f;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -234,7 +234,7 @@ body {
     -ms-flex-align: center;
     color: white;
     font-family: "roboto";
-    font-size: 42px;
+    font-size: 28px;
     text-transform: uppercase;
     -webkit-transition: all 600ms;
     -moz-transition: all 600ms;
@@ -246,9 +246,9 @@ body {
     position: absolute;
     top: -500px;
     left: 50%;
-    width: 900px;
-    height: 400px;
-    margin: 0 -450px;
+    width: 400px;
+    height: 300px;
+    margin: 0 -200px;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -286,11 +286,11 @@ body {
       height: auto; }
     #wrapper .jumbotrone .numbers {
       font-family: "Roboto";
-      font-size: 100px; }
+      font-size: 80px; }
     #wrapper .jumbotrone #home-score {
       position: absolute;
-      top: 150px;
-      left: 270px;
+      top: 105px;
+      left: 70px;
       width: 100px;
       height: 100px;
       display: -webkit-box;
@@ -320,8 +320,8 @@ body {
       -ms-flex-align: center; }
     #wrapper .jumbotrone #away-score {
       position: absolute;
-      top: 150px;
-      right: 280px;
+      top: 105px;
+      right: 75px;
       width: 100px;
       height: 100px;
       display: -webkit-box;
@@ -350,8 +350,8 @@ body {
       align-items: center;
       -ms-flex-align: center; }
   #wrapper .players {
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 220px;
     border-top-right-radius: 20px;
     overflow: hidden;
     transform: scale(0);
@@ -372,7 +372,7 @@ body {
 .playerName {
   position: absolute;
   margin-top: -51px;
-  width: 198px;
+  width: 150px;
   height: 45px;
   border: none;
   background: transparent;
@@ -380,7 +380,7 @@ body {
   text-align: center;
   color: black;
   text-transform: uppercase;
-  font-size: 19px;
+  font-size: 14px;
   font-family: "Roboto";
   font-weight: bold; }
   .playerName::-webkit-input-placeholder {

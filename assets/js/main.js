@@ -36,8 +36,8 @@ $(document).ready(function(){
 		
 		}else{		
 
-			$('.select-players').css("margin", "0 300px");
-			$('.jumbotrone').css("top", "300px");
+			$('.select-players').css("margin", "0 150px");
+			$('.jumbotrone').css("top", "200px");
 			$('#start-game').css("display", "none");
 
 			// Pause intro music
