@@ -1,2 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body {
   background: #1f1f1f; }
+
+#sound_intro {
+  visibility: hidden; }
+
+#page_intro {
+  visibility: hidden; }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://humbervalleyhockeyschool.com/asst/hockey-ice-background2.jpg");
+  background-size: cover;
+  opacity: 0.1; }
+
+#wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  #wrapper .control-btn {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    color: #1f1f1f;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    transition: all 600ms; }
+    #wrapper .control-btn:hover {
+      transform: scale(1.1); }
+  #wrapper .controls {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    display: none;
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    transition: all 1000ms; }
+    #wrapper .controls img {
+      max-width: 100%;
+      height: auto; }
+  #wrapper .select-players {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    background: #1f1f1f;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 0 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    color: white;
+    font-family: "roboto";
+    font-size: 42px;
+    text-transform: uppercase;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    transition: all 600ms;
+    cursor: pointer; }
+    #wrapper .select-players:hover {
+      transform: scale(1.1); }
+  #wrapper .jumbotrone {
+    position: absolute;
+    top: -500px;
+    left: 50%;
+    width: 900px;
+    height: 400px;
+    margin: 0 -450px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    color: white;
+    font-family: "digital";
+    font-size: 42px;
+    text-transform: uppercase;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    transition: all 800ms; }
+    #wrapper .jumbotrone img {
+      max-width: 100%;
+      height: auto; }
+    #wrapper .jumbotrone .numbers {
+      font-family: "Roboto";
+      font-size: 100px; }
+    #wrapper .jumbotrone #home-score {
+      position: absolute;
+      top: 150px;
+      left: 270px;
+      width: 100px;
+      height: 100px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; }
+    #wrapper .jumbotrone #away-score {
+      position: absolute;
+      top: 150px;
+      right: 280px;
+      width: 100px;
+      height: 100px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; }
+  #wrapper .players {
+    width: 200px;
+    height: 300px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    transform: scale(0);
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    transition: all 800ms; }
+    #wrapper .players img {
+      max-width: 100%;
+      height: auto; }
+  #wrapper #player-one {
+    border: 1px solid red; }
+  #wrapper #player-two {
+    border: 1px solid blue; }
+
+.active {
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7); }
+
+.playerName {
+  position: absolute;
+  margin-top: -51px;
+  width: 198px;
+  height: 45px;
+  border: none;
+  background: transparent;
+  outline: none;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-family: "Roboto";
+  font-weight: bold; }
+  .playerName::-webkit-input-placeholder {
+    color: black; }
+  .playerName::-moz-placeholder {
+    color: black; }
+  .playerName:-moz-placeholder {
+    color: black; }
+  .playerName:-ms-input-placeholder {
+    color: black; }
+
+#start-game {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 300px;
+  height: 100px;
+  background-image: url("http://www.theunbeatables.co.uk/keepyuppygame/images/button_green_over.png");
+  background-size: cover;
+  margin-left: -150px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  line-height: 3.5;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  transition: all 400ms;
+  display: none;
+  cursor: pointer; }
+  #start-game img {
+    max-width: 100%;
+    height: auto; }
+  #start-game:hover {
+    transform: scale(1.3); }

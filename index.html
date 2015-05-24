@@ -4,11 +4,79 @@
 	<meta charset="UTF-8">
 	<title>TRE kronor</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/mousetrap.js"></script>
 </head>
 <body>
+
+	<audio controls id="sound_intro">
+  		<source src="assets/lib/sounds/NHLintro.mp3" type="audio/mpeg">
+	</audio>
+	<audio controls id="page_intro">
+  		<source src="assets/lib/sounds/pageintro.mp3" type="audio/mpeg">
+	</audio>
 	
+	<!-- Background image ( ice ) -->
+	<div class="bg"></div>
+
+	<!-- Content wrapper -->
+	<div id="wrapper">
+		
+		<!-- Controler button -->
+		<div class="control-btn">
+			<i class="fa fa-gamepad fa-5x"></i>
+			control
+		</div>
+	
+		<!-- Shooter controler div -->
+		<div class="controls"><img src="assets/img/controlls.png" alt=""></div>
+
+		<!-- Player one div -->
+		<div id="player-one" class="players active">
+			<img src="assets/img/playercard1.png" alt="">
+
+			<!-- Input playername -->
+			<input type="text" id="p1" class="playerName" placeholder="Enter playername" onfocus="this.placeholder=''">
+		</div>
+
+		<!-- Select player button -->
+		<div class="select-players">Select players</div>
+		
+		<!-- Jumbotrone -->
+		<div class="jumbotrone">
+			<img src="assets/img/jumbotrone1.png" alt="">
+		
+			<!-- Home score -->
+			<div id="home-score" class="numbers score">0</div>
+
+			<!-- Away score -->
+			<div id="away-score" class="numbers">0</div>
+
+		</div>
+
+		<!-- Player two div -->
+		<div id="player-two" class="players">
+			<img src="assets/img/playercard2.png" alt="">
+
+			<!-- Input playername player2 -->
+			<input type="text" id="p2" class="playerName" placeholder="Enter playername" onfocus="this.placeholder=''">
+
+		</div>
+		
+		<!-- Start game button -->
+		<div id="start-game">
+			
+			<p>start game</p>
+		</div>
+
+	</div>
+
+
+
 </body>
 </html>

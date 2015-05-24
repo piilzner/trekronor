@@ -1,4 +1,222 @@
-@import '../lib/variables'
+@import '../lib/imports'
+
 
 body
 	background: $bg
+
+#sound_intro
+	visibility: hidden
+#page_intro
+	visibility: hidden
+
+
+// background image (ice)
+.bg
+	position: fixed
+	top: 0
+	left: 0
+	+size(100%)
+	background: 
+		image: url('http://humbervalleyhockeyschool.com/asst/hockey-ice-background2.jpg')
+		size: cover 
+	opacity: 0.1
+
+// Content wrapper
+#wrapper
+	position: absolute
+	+size(100%)
+	+display(flex)
+	+justify-content(center)
+	+align-items(center)
+
+	
+	// Controler button
+	.control-btn
+		position: absolute
+		top: 100px
+		left: 50px
+		width: 100px
+		height: 100px
+		color: #1f1f1f
+		text-align: center
+		cursor: pointer
+		font: 
+			family: $roboto
+		text-transform: uppercase
+		+transition(all 600ms)
+
+		&:hover
+			transform: scale(1.1)
+
+
+	// Controler div (show gameplay controls)
+	.controls
+		position: absolute
+		top: -80px 
+		left: 50%
+		width: 800px
+		margin-left: -400px
+		display: none
+		+transition(all 1000ms)
+
+		img 
+			max-width: 100%
+			height: auto
+
+
+	// start game button
+	.select-players
+		width: 400px
+		height: 200px
+		border-radius: 15px
+		background: $bg
+		border: 2px solid rgba(255,255,255,0.1)
+		margin: 0 100px
+		+display(flex)
+		+justify-content(center)
+		+align-items(center)
+		color: white
+		font:
+			family: "roboto"
+			size: 42px
+		text-transform: uppercase
+		+transition(all 600ms)
+		cursor: pointer
+
+		&:hover
+			transform: scale(1.1)
+
+	// Big jumbotrone div
+	.jumbotrone
+		position: absolute
+		top: -500px
+		left: 50%
+		width: 900px
+		height: 400px
+		margin: 0 -450px
+		+display(flex)
+		+justify-content(center)
+		+align-items(center)
+		color: white
+		font:
+			family: 'digital'
+			size: 42px
+		text-transform: uppercase
+		+transition(all 800ms)
+
+		img 
+			max-width: 100%
+			height: auto
+
+		// Game results
+		.numbers
+			font: 
+				family: $roboto
+				size: 100px
+
+		// Home score div
+		#home-score
+			position: absolute
+			top: 150px
+			left: 270px
+			width: 100px
+			height: 100px
+			+display(flex)
+			+justify-content(center)
+			+align-items(center)
+		
+		// Away score div
+		#away-score
+			position: absolute
+			top: 150px
+			right: 280px
+			width: 100px
+			height: 100px
+			+display(flex)
+			+justify-content(center)
+			+align-items(center)
+
+
+	// Playercards
+	.players
+		width: 200px
+		height: 300px
+		// border: 2px solid #000
+		border-top-right-radius: 20px
+		overflow: hidden
+		transform: scale(0)
+		+transition(all 800ms)
+
+		img 
+			max-width: 100%
+			height: auto
+
+
+
+	#player-one
+		border: 1px solid red
+
+		
+	#player-two
+		border: 1px solid blue
+
+
+// Add active class on playercards
+.active
+	box-shadow: 5px 5px 5px rgba(255,255,255,0.7)
+
+
+// Inputs for playernames
+.playerName
+	position: absolute
+	margin-top: -51px
+	width: 198px
+	height: 45px
+	border: none
+	background: transparent
+	outline: none
+	text-align: center
+	color: black
+	text-transform: uppercase
+	font:
+		size: 19px
+		family: $roboto
+		weight: bold
+
+	@include placeholder
+		color: black
+
+// Start game button
+#start-game
+	position: absolute
+	bottom: 100px
+	left: 50%
+	width: 300px
+	height: 100px
+	background: 
+		image: url('http://www.theunbeatables.co.uk/keepyuppygame/images/button_green_over.png')
+		size: cover
+	margin-left: -150px
+	+display(flex)
+	+justify-content(center)
+	line-height: 3.5
+	font: 
+		size: 24px
+		weight: bold
+		family: $roboto
+	text-transform: uppercase
+	color: white
+	+transition(all 400ms)
+	display: none
+	cursor: pointer
+
+
+	img 
+		max-width: 100%
+		height: auto
+
+	&:hover
+		transform: scale(1.3)
+
+
+
